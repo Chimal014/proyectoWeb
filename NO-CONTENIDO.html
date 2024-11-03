@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Cargar Fuentes-->
+    <link rel="stylesheet" href="./recursos-maquetacion-2/fonts/fontawesome-free-6.1.2-web/css/all.min.css"/>
+    <link rel="stylesheet" href="./recursos-maquetacion-2/fonts/dmsans/dmsans.css"/>
+    <!--Cargar Estilos-->
+    <link rel="stylesheet" href="./recursos-maquetacion-2/css/reset.css"/>
+    <link rel="stylesheet" href="./recursos-maquetacion-2/css/styles.css"/>
+    <!--Cargar JS-->
+    <link rel="icon" href="assets-proyecto1/img/iconoPestaña.png" type="image/png">
+    <title>Aplicaciones multimedia </title>
+    <title>Texto y Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #2522ba 0%, #ffdc60  100%);
+            background-color: #f0f0f0;
+            
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 50px auto;
+            padding: 20px;
+            width: 80%;
+            height: 1000px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            
+            
+        }
+
+        .text-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px auto;
+            padding: 20px;
+            width: 90%;
+            height: 90%;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(2, 48, 255, 0.185);
+            border-radius: 10px;
+            
+        }
+
+        .text-content img {
+        max-width: 85%;  /* La imagen no excederá el ancho del contenedor */
+        height: auto;     /* Mantiene la relación de aspecto de la imagen */
+        border-radius: 8px; /* Si quieres redondear las esquinas de la imagen */
+        
+        }
+
+        iframe {
+            width: 100%;
+            height: 95%;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-content {
+            width: 45%;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .text-content, .video-content {
+                width: 100%;
+            }
+
+            iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="layout__menu">
+        <div class="menu__navbar">
+
+            <!--LOGO-->
+            <div class="navbar__logo">
+                <a href="index.html" class="navbar__link-logo">
+                    <img src="./recursos-maquetacion-2/img/newtitle.jpg" class="navbar__logo-light"/>
+                </a>
+            </div>
+            <!--NAVEGACION-->
+            <nav class="navbar__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__title">Inicio</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="temario.html" class="nav__title">Temario
+                        </a>
+                      <!--  <ul class="nav__submenu">
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title"> Unidades tematica 1 </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title"> Unidades tematica 2 </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title"> Unidades tematica 3 </a>
+                            </li>
+                        </ul> -->
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__title">Tareas
+                        <i class="fa-solid fa-chevron-down nav__icon"></i>
+                        </a>
+                        <ul class="nav__submenu">
+                            <li class="submenu__item">
+                                <a href="prueba-contenido.html" class="submenu__title">Unidad 1 </a>
+                            </li>
+                           <!-- <li class="submenu__item">
+                                <a href="#" class="submenu__title">Unidad 2 </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">Unidad 3 </a>
+                            </li> -->
+                        </ul>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__title">Trabajos
+                        <i class="fa-solid fa-chevron-down nav__icon"></i>
+                        </a>
+                        <ul class="nav__submenu">
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title">Unidad 1 </a>
+                            </li>
+                           <!-- <li class="submenu__item">
+                                <a href="#" class="submenu__title">  Unidad 2 </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title"> Unidad 3 </a>
+                            </li> -->
+                        </ul>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="criticanos.html" class="nav__title">Criticanos (encuesta)
+                      <!--   <i class="fa-solid fa-chevron-down nav__icon"></i> -->
+                        </a>
+                      <!--  <ul class="nav__submenu">
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title"> Unidades tematica 1 </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title"> Unidades tematica 2 </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title"> Unidades tematica 3 </a>
+                            </li>
+                        </ul> -->
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__title">Acerca de Nosotros</a>
+                        <i class="fa-solid fa-chevron-down nav__icon"></i>
+                        </a>
+                        <ul class="nav__submenu">
+                            <li class="submenu__item">
+                                <a href="Acerca-de-nosotros/acerca-de-chimal.html" class="submenu__title"> Chimal Bruno  </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="Acerca-de-nosotros/acerca-de-francisco.html" class="submenu__title"> Jasso Francisco</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="Acerca-de-nosotros/acerca-de-daniel.html" class="submenu__title"> Salas Daniel </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </section> <br> <br>
+    <header>
+        <h1>ERROR CAPA 8</h1>
+        <p> </p>
+    </header>
+    <div class="container">
+        <div class="text-content">
+            <center> <img src="estamos chambiando pa.jpg"/> </center>
+        </div>
+    </div>
+
+</body>
+</html>

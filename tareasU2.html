@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Cargar Fuentes-->
+    <link rel="stylesheet" href="./recursos-maquetacion-2/fonts/fontawesome-free-6.1.2-web/css/all.min.css"/>
+    <link rel="stylesheet" href="./recursos-maquetacion-2/fonts/dmsans/dmsans.css"/>
+    <!--Cargar Estilos-->
+    <link rel="stylesheet" href="./recursos-maquetacion-2/css/reset.css"/>
+    <link rel="stylesheet" href="./recursos-maquetacion-2/css/styles.css"/>
+    <!--Cargar JS-->
+    <link rel="icon" href="assets-proyecto1/img/iconoPestaña.png" type="image/png">
+    <title>Aplicaciones multimedia </title>
+    <title>Texto y Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #2522ba 0%, #ffdc60  100%);
+            background-color: #f0f0f0;
+            
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 50px auto;
+            padding: 20px;
+            width: 80%;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            
+            
+        }
+
+        .text-content {
+            width: 45%;
+            text-align: justify;
+        }
+
+        iframe {
+            width: 100%;
+            height: 415px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-content {
+            width: 45%;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .text-content, .video-content {
+                width: 100%;
+            }
+
+            iframe {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="layout__menu">
+        <div class="menu__navbar">
+
+            <!--LOGO-->
+            <div class="navbar__logo">
+                <a href="index.html" class="navbar__link-logo">
+                    <img src="./recursos-maquetacion-2/img/newtitle.jpg" class="navbar__logo-light"/>
+                </a>
+            </div>
+            <!--NAVEGACION-->
+            <nav class="navbar__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__title">Inicio</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="temario.html" class="nav__title">Temario
+                        </a>
+                      <!--  <ul class="nav__submenu">
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title"> Unidades tematica 1 </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title"> Unidades tematica 2 </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title"> Unidades tematica 3 </a>
+                            </li>
+                        </ul> -->
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__title">Tareas
+                        <i class="fa-solid fa-chevron-down nav__icon"></i>
+                        </a>
+                        <ul class="nav__submenu">
+                            <li class="submenu__item">
+                                <a href="prueba-contenido.html" class="submenu__title">Unidad 1 </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="tareasU2.html" class="submenu__title">Unidad 2 </a>
+                            </li>
+                            <!-- <li class="submenu__item">
+                                <a href="#" class="submenu__title">Unidad 3 </a>
+                            </li> -->
+                        </ul>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__title">Trabajos
+                        <i class="fa-solid fa-chevron-down nav__icon"></i>
+                        </a>
+                        <ul class="nav__submenu">
+                            <li class="submenu__item">
+                                <a href="NO-CONTENIDO.html" class="submenu__title">Unidad 1 </a>
+                            </li>
+                           <!-- <li class="submenu__item">
+                                <a href="#" class="submenu__title">  Unidad 2 </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title"> Unidad 3 </a>
+                            </li> -->
+                        </ul>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="criticanos.html" class="nav__title">Criticanos (encuesta)
+                      <!--   <i class="fa-solid fa-chevron-down nav__icon"></i> -->
+                        </a>
+                      <!--  <ul class="nav__submenu">
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title"> Unidades tematica 1 </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title"> Unidades tematica 2 </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__title"> Unidades tematica 3 </a>
+                            </li>
+                        </ul> -->
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#" class="nav__title">Acerca de Nosotros</a>
+                        <i class="fa-solid fa-chevron-down nav__icon"></i>
+                        </a>
+                        <ul class="nav__submenu">
+                            <li class="submenu__item">
+                                <a href="Acerca-de-nosotros/acerca-de-chimal.html" class="submenu__title"> Chimal Bruno  </a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="Acerca-de-nosotros/acerca-de-francisco.html" class="submenu__title"> Jasso Francisco</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="Acerca-de-nosotros/acerca-de-daniel.html" class="submenu__title"> Salas Daniel </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </section> <br> <br>
+    <header>
+        <h1>Unidad Tematica: 2.1</h1>
+        <p>Las Tecnologias de desarrollo multimedia</p>
+    </header>
+    <div class="container">
+        <div class="text-content">
+            <h2>Lenguajes de programacion graficos y web</h2>
+            <p>Los lenguajes de programación gráficos están diseñados para la creación y manipulación de gráficos 2D y 3D, interactuando principalmente con la GPU.
+                Los lenguajes de programación web están orientados a la creación de sitios y aplicaciones web, manejando tanto el frontend como el backend, permitiendo interactividad, diseño responsivo y conectividad con bases de datos</p>
+            <h3>Características</h3>
+            <p>Interacción con la GPU: Permiten comunicarse directamente con la unidad de procesamiento gráfico para manejar cálculos intensivos de gráficos y renderizado, Renderizado en Tiempo Real: Soportan la creación de gráficos que pueden ser visualizados y modificados de manera dinámica y en tiempo real, Manipulación 2D y 3D: Permiten construir y manipular modelos tanto en dos como en tres dimensiones.</p>
+            <h3>Ejemplos</h3>
+            <p> lgunos de los lenguajes de programación gráficos más conocidos incluyen OpenGL (Open Graphics Library), una API que permite crear gráficos 2D y 3D interactivos, utilizada en software de simulación, videojuegos y gráficos científicos, y que es compatible con lenguajes como C, C++ y Python. Otro es DirectX, un conjunto de APIs de Microsoft utilizado en Windows para manejar gráficos y multimedia, donde Direct3D es la API para gráficos 3D, muy común en videojuegos y aplicaciones multimedia. Vulkan, por su parte, es una API de gráficos de bajo nivel diseñada para ofrecer alto rendimiento y un control más eficiente sobre la GPU que OpenGL, y es compatible con Windows, Linux y Android. </p>
+        </div>
+
+        <div class="video-content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pqfAvZC5clw?si=iIj-NaA7LnKL9cSS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="text-content">
+            <h2>Ambientes de desarrollor para web</h2>
+            <p>Los ambientes de desarrollo para web son plataformas y herramientas que facilitan el diseño, desarrollo, pruebas y despliegue de aplicaciones web. Estos ambientes incluyen desde editores de código, frameworks, servidores locales y servicios de administración de dependencias, hasta herramientas de automatización y control de versiones.</p>
+            <h3>Características</h3>
+            <p>Entre sus características más destacadas se encuentran el autocompletado inteligente (IntelliSense), la depuración en tiempo real, y la posibilidad de trabajar en proyectos colaborativos con Live Share. Un ejemplo práctico del uso de VS Code es en el desarrollo web, donde los programadores pueden escribir código HTML, CSS y JavaScript, mientras depuran directamente en el navegador usando las herramientas de DevTools integradas..</p>
+            <h3>Ejemplos</h3>
+            <p> Visual Studio Code (VS Code) es un editor de código fuente desarrollado por Microsoft que destaca por su ligereza, rapidez y extensibilidad. Sus principales características incluyen la compatibilidad con una amplia gama de lenguajes de programación como JavaScript, Python, C++, HTML, y CSS, entre muchos otros. VS Code ofrece integración nativa con Git, permitiendo a los desarrolladores realizar control de versiones de manera sencilla dentro del mismo editor. Además, cuenta con un potente sistema de extensiones que permite personalizar el entorno de desarrollo, agregar funciones como depuradores, linters, y herramientas de integración continua </p>
+        </div>
+
+        <div class="video-content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CxF3ykWP1H4?si=FhXr5BQa4OyarbHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
